@@ -103,5 +103,10 @@
 .application--wrap {
   background: #fafafa;
 }
+
+.list__tile__title {
+  /* lol important everything totally not a bad idea ....*/
+  text-transform: none !important;
+}
 </style>
 
