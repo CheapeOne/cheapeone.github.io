@@ -23,7 +23,7 @@
             </v-flex>
             <v-flex sm6>
               <p>
-                Hi! I'm a software engineer in Atlanta, GA. I received my Masters in Computer Science 
+                Hi! I'm Chris Cheape, a software engineer in Atlanta, GA. I received my Masters in Computer Science 
                 from Georgia Tech in December 2017, and my Bachelors in Computer Science from the same 
                 school in May 2016. The courses that engaged me the most were those involving machine 
                 learning and visualization.
@@ -33,17 +33,17 @@
                 I is in full stack development, seeing a feature through front to back. 
                 There's nothing like watching someone enjoy something you helped create. My greatest strength is picking 
                 up new emerging technologies and running with them, whether it be artificial intelligence, 
-                virtual reality, or the next big thing. 
-                <!-- When I'm not working on side projects, you'll find me practicing 
-                piano or scuba diving. -->
+                virtual reality, or the next big thing.
               </p>
-              <!-- <div class="text-xs-right">
-                <em><small>&mdash; John Leider</small></em>
-              </div>
-              <hr class="my-3">
-              <a href="https://nuxtjs.org/" target="_blank">Nuxt Documentation</a>
-              <br>
-              <a href="https://github.com/nuxt/nuxt.js" target="_blank">Nuxt GitHub</a> -->
+
+              <v-btn 
+                flat
+                color="primary"
+                href="https://drive.google.com/file/d/1yXAxbayw7RR2HKZxglkWj5zotVLeHqxz/view?usp=sharing"
+                target="_blank">
+                Resumé
+              </v-btn>
+              
             </v-flex>
           </v-layout>
         </v-card-text>

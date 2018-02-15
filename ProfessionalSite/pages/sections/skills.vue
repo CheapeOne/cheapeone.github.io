@@ -92,8 +92,12 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .c-icon {
   height: 20px;
+}
+
+.chip {
+  border-color: white !important;
 }
 </style>

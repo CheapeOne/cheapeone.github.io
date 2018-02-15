@@ -4,17 +4,27 @@
     <v-toolbar
       app
       flat
+      scroll-off-screen
       dark
       dense
-      color="secondary">
+      color="secondary"
+      id="c-toolbar">
       <img class="logo" src="/super-chris-b.png" alt="">
       
       <v-toolbar-title>Christopher Cheape</v-toolbar-title>
       <v-spacer></v-spacer>
 
       <!-- Side menu, shows on mobile -->
-      <v-menu absolute>
+      <v-menu
+        attach="#c-toolbar-menu"
+        bottom
+        left
+        offset-y
+        min-width="130px"
+        transition="slide-y-transition">
+
         <v-btn 
+          id="c-toolbar-menu"
           class="hidden-md-and-up"
           slot="activator"
           style="margin-right: 16px;"
@@ -22,8 +32,11 @@
           icon>
           <v-icon>more_horiz</v-icon>
         </v-btn>
-        <v-list>
-          <v-list-tile v-for="(link, i) in links" :key="i">
+        <v-list light>
+          <v-list-tile 
+            v-for="(link, i) in links" 
+            :key="i" 
+            @click="goToSection(link.href, link.duration)">
             <v-list-tile-title>{{link.text}}</v-list-tile-title>
           </v-list-tile>
         </v-list>
@@ -33,6 +46,7 @@
         <v-btn
           v-for="(link, i) in links"
           :key="i" 
+          @click="goToSection(link.href, link.duration)"
           flat>
           {{link.text}}
         </v-btn>
@@ -58,12 +72,23 @@
     data () {
       return {
         links: [
-          {text: 'Skills'},
-          {text: 'Experience'},
-          {text: 'Projects'},
-          {text: 'About'},
-          {text: 'Contact'},
+          {text: 'Skills', href:'#c-skills'},
+          {text: 'Experience', href:'#c-experience'},
+          {text: 'Projects', href:'#c-projects'},
+          {text: 'Contact', href:'#c-contact'}
         ]
+      }
+    },
+
+    methods: {
+      goToSection(selector, duration) {
+        if (duration === undefined) {
+          duration = 700
+        }
+        this.$vuetify.goTo(selector, {
+          duration: duration,
+          easing: 'easeInOutCubic'
+        })
       }
     }
   }

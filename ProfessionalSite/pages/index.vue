@@ -1,10 +1,10 @@
 <template>
   <div>
-    <jumbo class="mb-5"></jumbo>
-    <skills class="mb-5"></skills>
-    <experience class="mb-5"></experience>
-    <projects class="mb-5"></projects>
-    <contact class="mb-5"></contact>    
+    <jumbo id="c-jumbo" class="mb-5"></jumbo>
+    <skills id="c-skills" class="mb-5"></skills>
+    <experience id="c-experience" class="mb-5"></experience>
+    <projects id="c-projects" class="mb-5"></projects>
+    <contact id="c-contact" class="mb-5"></contact>    
   </div>
 </template>
 <script>
@@ -26,7 +26,7 @@
 </script>
 
 <style>
-ul {
+.content ul {
   margin-left: 16px;
 }
 

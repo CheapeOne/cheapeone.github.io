@@ -206,7 +206,7 @@ export default {
           `,
           img: '/projects/jane.png',
           actions: [
-            {title: 'Github', link: '', color: 'primary'}
+            {title: 'Github', link: 'https://github.com/CheapeOne/JaneBound', color: 'primary'}
           ]
         },
 
