@@ -1,11 +1,5 @@
-# STATIC
+# Chris Cheape's Professional Website
 
-This directory contains your static files.
-Each file inside this directory is mapped to /.
+Built with Vue.js, Nuxt.js, and Vuetify.js
 
-Example: /static/robots.txt is mapped as /robots.txt.
-
-More information about the usage of this directory in the documentation:
-https://nuxtjs.org/guide/assets#static
-
-**This directory is not required, you can delete it if you don't want to use it.**
+For detailed explanation on how things work, check out the [Nuxt.js](https://github.com/nuxt/nuxt.js) and [Vuetify.js](https://vuetifyjs.com/) documentation.
