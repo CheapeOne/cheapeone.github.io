@@ -10,7 +10,7 @@
     <v-flex xs12 sm6 md6 v-for="(work, i) in experiences" :key="i">
 
       <!-- Work Card -->
-      <v-card style="height: 100%;">
+      <v-card height="100%">
         <v-card-media 
           :src="work.img" 
           :id="'card' + i"
@@ -70,7 +70,7 @@ export default {
             `,
           img: '/experience/cloudtags2.png',
           actions: [
-            {title: 'More', link: 'http://cloudtags.com', color: 'primary'}
+            {title: 'Site', link: 'http://cloudtags.com', color: 'primary'}
           ]
         },
         
@@ -96,7 +96,7 @@ export default {
           `,
           img: '/experience/cmg4.jpg',
           actions: [
-            {title: 'More', link: 'https://www.coxmediagroup.com/', color: 'primary'}
+            {title: 'Site', link: 'https://www.coxmediagroup.com/', color: 'primary'}
           ]
         },
 
@@ -108,16 +108,8 @@ export default {
 </script>
 
 <style>
-ul {
-  margin-left: 16px;
-}
-
-.card__text {
-  padding-bottom: 0;
-}
 
 #card1 .card__media__background{
   background-position-y: 30% !important;
-  
 }
 </style>

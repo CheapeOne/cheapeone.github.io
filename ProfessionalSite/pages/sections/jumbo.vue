@@ -37,10 +37,6 @@
                 <!-- When I'm not working on side projects, you'll find me practicing 
                 piano or scuba diving. -->
               </p>
-
-              
-              
-              
               <!-- <div class="text-xs-right">
                 <em><small>&mdash; John Leider</small></em>
               </div>
@@ -55,3 +51,10 @@
     </v-flex>
   </v-layout>
 </template>
+
+<style scoped>
+.card__text {
+  padding-bottom: 16px;
+}
+</style>
+

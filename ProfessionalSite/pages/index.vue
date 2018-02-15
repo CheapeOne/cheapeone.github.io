@@ -4,7 +4,7 @@
     <skills class="mb-5"></skills>
     <experience class="mb-5"></experience>
     <projects class="mb-5"></projects>
-    <about class="mb-5"></about>
+    <contact class="mb-5"></contact>    
   </div>
 </template>
 <script>
@@ -12,7 +12,7 @@
   import Skills from './sections/skills'
   import Experience from './sections/experience'
   import Projects from './sections/projects'
-  import About from './sections/about'
+  import Contact from './sections/contact'
 
   export default {
     components: {
@@ -20,7 +20,17 @@
       Skills,
       Experience,
       Projects,
-      About
+      Contact
     }
   }
 </script>
+
+<style>
+ul {
+  margin-left: 16px;
+}
+
+.card__text {
+  padding-bottom: 0;
+}
+</style>
