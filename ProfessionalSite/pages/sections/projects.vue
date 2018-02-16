@@ -83,7 +83,7 @@ export default {
               </li>
             </ul>
           `,
-          img: '/projects/skyoo2.png',
+          img: '/projects/skyoo2.jpg',
           actions: [
             {title: 'Site', link: 'https://skyootutors.com', color: 'primary'}
           ]
@@ -117,7 +117,7 @@ export default {
           text: `I designed and trained a generative adversarial network (GAN) for generating dog images.
           This made use of Scipy, Tensorflow, and the DCGAN architecture. Images were from the Stanford dogs dataset.
           I wrote a Medium article about my findings (and GAN's in general) below:`,
-          img: '/projects/gan.png',
+          img: '/projects/gan.jpg',
           actions: [
             {title: 'Article', link: 'https://medium.com/@cheapeone/the-the-ml-architecture-of-the-generation-d3b6f52faaab', color: 'primary'}
           ]
@@ -204,7 +204,7 @@ export default {
           for the player using a navigation mesh.
           </li></ul>
           `,
-          img: '/projects/jane.png',
+          img: '/projects/jane.jpg',
           actions: [
             {title: 'Github', link: 'https://github.com/CheapeOne/JaneBound', color: 'primary'}
           ]

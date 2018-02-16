@@ -68,7 +68,7 @@ export default {
               </li>
             </ul>
             `,
-          img: '/experience/cloudtags2.png',
+          img: '/experience/cloudtags2.jpg',
           actions: [
             {title: 'Site', link: 'http://cloudtags.com', color: 'primary'}
           ]
