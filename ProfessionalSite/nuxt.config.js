@@ -37,18 +37,24 @@ module.exports = {
       '~/plugins/vuetify.js'
     ],
     extractCSS: true,
-    /*
-    ** Run ESLint on save
-    */
+    analyze: true,
+
     extend (config, ctx) {
-      // if (ctx.isDev && ctx.isClient) {
-      //   config.module.rules.push({
-      //     enforce: 'pre',
-      //     test: /\.(js|vue)$/,
-      //     loader: 'eslint-loader',
-      //     exclude: /(node_modules)/
-      //   })
-      // }
+      if (ctx.isDev && ctx.isClient) {
+        config.module.rules.push(
+          // Runs ESLint on save
+          // {
+          //   enforce: 'pre',
+          //   test: /\.(js|vue)$/,
+          //   loader: 'eslint-loader',
+          //   exclude: /(node_modules)/
+          // },
+          {
+            test: /\.styl$/,
+            loader: ['style-loader', 'css-loader', 'stylus-loader']
+          }
+        )
+      }
     }
   }
 }
