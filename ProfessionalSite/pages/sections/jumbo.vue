@@ -30,7 +30,7 @@
               </p>
 
               <p>
-                I is in full stack development, seeing a feature through front to back. 
+                My focus is in full stack development, seeing a feature through front to back. 
                 There's nothing like watching someone enjoy something you helped create. My greatest strength is picking 
                 up new emerging technologies and running with them, whether it be artificial intelligence, 
                 virtual reality, or the next big thing.
