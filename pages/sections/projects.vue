@@ -23,11 +23,11 @@
           v-for="(project, i) in projects" 
           :key="i"
           class="masonry-item xs12 sm6 md4 ">
-          <v-card-media 
+          <v-img 
             :id="'project-img-' + i"
             :src="project.img" 
             height="200px">
-          </v-card-media>
+          </v-img>
           <v-card-text>
             <div>
               <span class="headline">{{project.title}}</span>

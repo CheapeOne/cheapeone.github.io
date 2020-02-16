@@ -11,11 +11,11 @@
 
       <!-- Work Card -->
       <v-card height="100%">
-        <v-card-media 
+        <v-img 
           :src="work.img" 
           :id="'card' + i"
           height="200px">
-        </v-card-media>
+        </v-img>
 
         <v-card-text>
           <div>

@@ -16,10 +16,10 @@
         <v-card-text>
           <v-layout row wrap>
             <v-flex sm6>
-              <v-card-media 
+              <v-img 
                 src="/experience/cmg1.jpg"
                 height="250px">
-              </v-card-media>
+              </v-img>
             </v-flex>
             <v-flex sm6>
               <p>
