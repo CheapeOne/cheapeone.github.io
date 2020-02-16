@@ -37,7 +37,7 @@
               </p>
 
               <v-btn 
-                flat
+                text
                 color="primary"
                 href="https://drive.google.com/file/d/1yXAxbayw7RR2HKZxglkWj5zotVLeHqxz/view?usp=sharing"
                 target="_blank">

@@ -15,46 +15,32 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' }
     ]
   },
+
   plugins: [
-    '~/plugins/vuetify.js',
     {
       src: '~plugins/vue-masonry.js',
       ssr: false
     }
   ],
+
   css: [
-    '~/assets/style/app.styl'
+    // '~/assets/style/app.styl'
   ],
+
   /*
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
+
   /*
   ** Build configuration
   */
   build: {
-    vendor: [
-      '~/plugins/vuetify.js'
-    ],
     extractCSS: true,
-    analyze: true,
+    analyze: true
+  },
 
-    extend (config, ctx) {
-      if (ctx.isDev && ctx.isClient) {
-        config.module.rules.push(
-          // Runs ESLint on save
-          // {
-          //   enforce: 'pre',
-          //   test: /\.(js|vue)$/,
-          //   loader: 'eslint-loader',
-          //   exclude: /(node_modules)/
-          // },
-          {
-            test: /\.styl$/,
-            loader: ['style-loader', 'css-loader', 'stylus-loader']
-          }
-        )
-      }
-    }
-  }
+  buildModules: [
+    '@nuxtjs/vuetify'
+  ]
 }

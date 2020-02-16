@@ -40,7 +40,7 @@
             <v-btn 
               v-for="(action, i) in project.actions"
               :key="i"
-              flat
+              text
               :color="action.color"
               :href="action.link"
               target="_blank">

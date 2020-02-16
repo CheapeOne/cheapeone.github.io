@@ -29,7 +29,7 @@
           <v-btn 
             v-for="(action, i) in work.actions"
             :key="i"
-            flat
+            text
             :color="action.color"
             :href="action.link"
             target="_blank">

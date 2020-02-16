@@ -18,7 +18,7 @@
             <v-chip 
               v-for="(language, index) in languages"
               :key="index"
-              outline
+              outlined
               label
               disabled
               color="secondary">
@@ -42,7 +42,7 @@
             <v-chip 
               v-for="(tech, index) in technologies"
               :key="index"
-              outline
+              outlined
               label
               disabled
               color="secondary">

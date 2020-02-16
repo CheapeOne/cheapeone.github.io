@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <!-- Navbar -->
-    <v-toolbar
+    <v-app-bar
       app
       flat
       scroll-off-screen
@@ -28,7 +28,7 @@
           class="hidden-md-and-up"
           slot="activator"
           style="margin-right: 16px;"
-          flat 
+          text 
           icon>
           <v-icon>more_horiz</v-icon>
         </v-btn>
@@ -47,11 +47,11 @@
           v-for="(link, i) in links"
           :key="i" 
           @click="goToSection(link.href, link.duration)"
-          flat>
+          text>
           {{link.text}}
         </v-btn>
       </v-toolbar-items>
-    </v-toolbar>
+    </v-app-bar>
 
     <!-- Page Content -->
     <v-content>
