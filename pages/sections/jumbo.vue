@@ -2,7 +2,7 @@
   <v-layout row wrap>
     <v-flex xs12>
       <v-parallax src="/jumbo/ml-b.jpg">
-        <div class="text-xs-center">
+        <div class="d-flex justify-center">
           <v-avatar
             size="150px"
             class="grey lighten-4">
