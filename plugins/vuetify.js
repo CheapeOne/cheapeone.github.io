@@ -36,7 +36,7 @@ Vue.use(Vuetify, {
   directives,
   transitions,
   theme: {
-    //primary: '#17A261',
+    // primary: '#17A261',
     primary: '#41A6F3'
   }
 })
