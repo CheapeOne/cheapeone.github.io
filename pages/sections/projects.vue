@@ -1,68 +1,62 @@
 <template>
-  <v-layout 
-    id="page"
-    column>
+  <v-layout id="page" column>
     <!-- Projects -->
     <v-flex xs12>
       <h1>Projects</h1>
     </v-flex>
     <!-- <v-layout row wrap ref="projectLayout"> -->
-    
+
     <v-flex xs12>
-      <div 
+      <div
         class="masonry"
-        v-masonry 
-        transition-duration="0.3s" 
+        v-masonry
+        transition-duration="0.3s"
         item-selector=".masonry-item"
         fit-width="true"
-        gutter=".gutter-item">
-        
+        gutter=".gutter-item"
+      >
         <div class="gutter-item"></div>
         <v-card
           v-masonry-tile
-          v-for="(project, i) in projects" 
+          v-for="(project, i) in projects"
           :key="i"
-          class="masonry-item xs12 sm6 md4 ">
-          <v-img 
-            :id="'project-img-' + i"
-            :src="project.img" 
-            height="200px">
+          class="masonry-item xs12 sm6 md4 "
+        >
+          <v-img :id="'project-img-' + i" :src="project.img" height="200px">
           </v-img>
           <v-card-text>
             <div>
-              <span class="headline">{{project.title}}</span>
-              <p>{{project.date}}</p>
+              <span class="headline">{{ project.title }}</span>
+              <p>{{ project.date }}</p>
               <span v-html="project.text"></span>
             </div>
           </v-card-text>
           <v-spacer></v-spacer>
           <v-card-actions>
-            <v-btn 
+            <v-btn
               v-for="(action, i) in project.actions"
               :key="i"
               text
               :color="action.color"
               :href="action.link"
-              target="_blank">
-              {{action.title}}
+              target="_blank"
+            >
+              {{ action.title }}
             </v-btn>
           </v-card-actions>
         </v-card>
       </div>
     </v-flex>
-
   </v-layout>
 </template>
 
 <script>
-import NoSSR from 'vue-no-ssr'
+import NoSSR from 'vue-no-ssr';
 
 export default {
   data() {
     return {
-
       projects: [
-
         // Skyoo
         {
           title: 'Skyoo Tutors Platform',
@@ -85,7 +79,7 @@ export default {
           `,
           img: '/projects/skyoo2.jpg',
           actions: [
-            {title: 'Site', link: 'https://skyootutors.com', color: 'primary'}
+            { title: 'Site', link: 'https://skyootutors.com', color: 'primary' }
           ]
         },
 
@@ -105,8 +99,17 @@ export default {
           </ul>`,
           img: '/projects/nutrition.jpg',
           actions: [
-            {title: 'Github', link: 'https://github.com/CheapeOne/GT-Nutrition', color: 'primary'},
-            {title: 'PDF', link: 'https://drive.google.com/file/d/1L0wKCt6fEwZwa9-qX_TZa94LBXKG9olb/view?usp=sharing', color: 'primary'}
+            {
+              title: 'Github',
+              link: 'https://github.com/CheapeOne/GT-Nutrition',
+              color: 'primary'
+            },
+            {
+              title: 'PDF',
+              link:
+                'https://drive.google.com/file/d/1L0wKCt6fEwZwa9-qX_TZa94LBXKG9olb/view?usp=sharing',
+              color: 'primary'
+            }
           ]
         },
 
@@ -119,7 +122,12 @@ export default {
           I wrote a Medium article about my findings (and GAN's in general) below:`,
           img: '/projects/gan.jpg',
           actions: [
-            {title: 'Article', link: 'https://medium.com/@cheapeone/the-the-ml-architecture-of-the-generation-d3b6f52faaab', color: 'primary'}
+            {
+              title: 'Article',
+              link:
+                'https://medium.com/@cheapeone/the-the-ml-architecture-of-the-generation-d3b6f52faaab',
+              color: 'primary'
+            }
           ]
         },
 
@@ -132,7 +140,12 @@ export default {
           I designed and built the frontend, using d3 + plotly to generate the map.`,
           img: '/projects/wherever.jpg',
           actions: [
-            {title: 'PDF', link: 'https://drive.google.com/file/d/1idSQvGd5HkapyeccbB9z3jkeianYhIGm/view?usp=sharing', color: 'primary'}
+            {
+              title: 'PDF',
+              link:
+                'https://drive.google.com/file/d/1idSQvGd5HkapyeccbB9z3jkeianYhIGm/view?usp=sharing',
+              color: 'primary'
+            }
           ]
         },
 
@@ -166,7 +179,12 @@ export default {
           <ul>`,
           img: '/projects/bus.jpg',
           actions: [
-            {title: 'Site', link: 'http://www.vip.gatech.edu/teams/intelligent-transportation-systems', color: 'primary'}
+            {
+              title: 'Site',
+              link:
+                'http://www.vip.gatech.edu/teams/intelligent-transportation-systems',
+              color: 'primary'
+            }
           ]
         },
 
@@ -186,7 +204,11 @@ export default {
           `,
           img: '/projects/twitter.png',
           actions: [
-            {title: 'Github', link: 'https://github.com/Shreyyas/TwitterTicker', color: 'primary'}
+            {
+              title: 'Github',
+              link: 'https://github.com/Shreyyas/TwitterTicker',
+              color: 'primary'
+            }
           ]
         },
 
@@ -206,7 +228,11 @@ export default {
           `,
           img: '/projects/jane.jpg',
           actions: [
-            {title: 'Github', link: 'https://github.com/CheapeOne/JaneBound', color: 'primary'}
+            {
+              title: 'Github',
+              link: 'https://github.com/CheapeOne/JaneBound',
+              color: 'primary'
+            }
           ]
         },
 
@@ -221,11 +247,15 @@ export default {
           `,
           img: '/projects/diff.jpeg',
           actions: [
-            {title: 'Site', link: 'http://www.visualdiff.com/', color: 'primary'}
+            {
+              title: 'Site',
+              link: 'http://www.visualdiff.com/',
+              color: 'primary'
+            }
           ]
         }
       ]
-    }
+    };
   },
 
   components: {
@@ -234,25 +264,23 @@ export default {
 
   mounted() {
     if (typeof this.$redrawVueMasonry === 'function') {
-      this.$redrawVueMasonry()
+      this.$redrawVueMasonry();
     }
   }
-}
+};
 </script>
 
 <style>
-
-#project-img-0 .card__media__background{
+#project-img-0 .card__media__background {
   background-position-x: 0% !important;
   background-position-y: 0% !important;
-  
 }
 
-#project-img-1 .card__media__background{
+#project-img-1 .card__media__background {
   background-position-y: 0% !important;
 }
 
-#project-img-3 .card__media__background{
+#project-img-3 .card__media__background {
   background-position-x: 0% !important;
 }
 
@@ -273,19 +301,19 @@ export default {
   .masonry-item {
     width: 368px !important;
   }
-} 
+}
 
 @media (min-width: 960px) and (max-width: 1263px) {
   .masonry-item {
     width: 420px !important;
   }
-} 
+}
 
 @media (max-width: 791px) {
   .masonry-item {
     width: 320px !important;
   }
-} 
+}
 
 @media (max-width: 699px) {
   .masonry {

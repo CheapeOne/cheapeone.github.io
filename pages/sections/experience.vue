@@ -1,39 +1,32 @@
 <template>
-  <v-layout 
-    row 
-    wrap>
-
+  <v-layout row wrap>
     <!-- Work Experience -->
     <v-flex xs12>
       <h1>Work Experience</h1>
     </v-flex>
     <v-flex xs12 sm6 md6 v-for="(work, i) in experiences" :key="i">
-
       <!-- Work Card -->
       <v-card height="100%">
-        <v-img 
-          :src="work.img" 
-          :id="'card' + i"
-          height="200px">
-        </v-img>
+        <v-img :src="work.img" :id="'card' + i" height="200px"> </v-img>
 
         <v-card-text>
           <div>
-            <span class="headline">{{work.title}}</span>
-            <p>{{work.date}}</p>
+            <span class="headline">{{ work.title }}</span>
+            <p>{{ work.date }}</p>
             <span v-html="work.text"></span>
           </div>
         </v-card-text>
-        
+
         <v-card-actions>
-          <v-btn 
+          <v-btn
             v-for="(action, i) in work.actions"
             :key="i"
             text
             :color="action.color"
             :href="action.link"
-            target="_blank">
-            {{action.title}}
+            target="_blank"
+          >
+            {{ action.title }}
           </v-btn>
         </v-card-actions>
       </v-card>
@@ -46,7 +39,6 @@ export default {
   data() {
     return {
       experiences: [
-
         // Cloudtags
         {
           title: 'Cloudtags',
@@ -70,10 +62,10 @@ export default {
             `,
           img: '/experience/cloudtags2.jpg',
           actions: [
-            {title: 'Site', link: 'http://cloudtags.com', color: 'primary'}
+            { title: 'Site', link: 'http://cloudtags.com', color: 'primary' }
           ]
         },
-        
+
         // CMG VR
         {
           title: 'Cox Media Group',
@@ -96,20 +88,21 @@ export default {
           `,
           img: '/experience/cmg4.jpg',
           actions: [
-            {title: 'Site', link: 'https://www.coxmediagroup.com/', color: 'primary'}
+            {
+              title: 'Site',
+              link: 'https://www.coxmediagroup.com/',
+              color: 'primary'
+            }
           ]
-        },
-
-        
+        }
       ]
-    }
+    };
   }
-}
+};
 </script>
 
 <style>
-
-#card1 .card__media__background{
+#card1 .card__media__background {
   background-position-y: 30% !important;
 }
 </style>

@@ -1,7 +1,5 @@
 <template>
-  <v-layout 
-    row 
-    wrap>
+  <v-layout row wrap>
     <v-flex xs12>
       <h1>Contact</h1>
     </v-flex>
@@ -10,7 +8,6 @@
     <v-flex xs12 sm8 md6 height="100%">
       <v-card>
         <v-card-text>
-
           <v-layout row wrap justify-space-between>
             <v-flex class="contact-info">
               <div>
@@ -24,27 +21,24 @@
             </v-flex>
 
             <v-flex class="button-box">
-              <v-btn 
+              <v-btn
                 color="primary"
                 href="https://www.linkedin.com/in/christopher-cheape-54a08577/"
-                target="_blank">
+                target="_blank"
+              >
                 LinkedIn
               </v-btn>
-              <v-btn 
+              <v-btn
                 color="secondary"
                 href="https://github.com/CheapeOne"
-                target="_blank">
+                target="_blank"
+              >
                 Github
               </v-btn>
             </v-flex>
-
           </v-layout>
 
-          
-          <div>
-            
-          </div>
-          
+          <div></div>
         </v-card-text>
       </v-card>
     </v-flex>
@@ -52,9 +46,7 @@
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style scoped>
@@ -71,5 +63,4 @@ export default {
   justify-content: flex-end;
   padding-right: 0 !important;
 }
-
 </style>

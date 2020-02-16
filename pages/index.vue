@@ -4,25 +4,25 @@
     <skills id="c-skills" class="mb-5"></skills>
     <experience id="c-experience" class="mb-5"></experience>
     <projects id="c-projects" class="mb-5"></projects>
-    <contact id="c-contact" class="mb-5"></contact>    
+    <contact id="c-contact" class="mb-5"></contact>
   </div>
 </template>
 <script>
-  import Jumbo from './sections/jumbo'
-  import Skills from './sections/skills'
-  import Experience from './sections/experience'
-  import Projects from './sections/projects'
-  import Contact from './sections/contact'
+import Jumbo from './sections/jumbo';
+import Skills from './sections/skills';
+import Experience from './sections/experience';
+import Projects from './sections/projects';
+import Contact from './sections/contact';
 
-  export default {
-    components: {
-      Jumbo,
-      Skills,
-      Experience,
-      Projects,
-      Contact
-    }
+export default {
+  components: {
+    Jumbo,
+    Skills,
+    Experience,
+    Projects,
+    Contact
   }
+};
 </script>
 
 <style>

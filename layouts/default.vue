@@ -8,9 +8,10 @@
       dark
       dense
       color="secondary"
-      id="c-toolbar">
-      <img class="logo" src="/super-chris-b.png" alt="">
-      
+      id="c-toolbar"
+    >
+      <img class="logo" src="/super-chris-b.png" alt="" />
+
       <v-toolbar-title>Christopher Cheape</v-toolbar-title>
       <v-spacer></v-spacer>
 
@@ -21,23 +22,25 @@
         left
         offset-y
         min-width="130px"
-        transition="slide-y-transition">
-
-        <v-btn 
+        transition="slide-y-transition"
+      >
+        <v-btn
           id="c-toolbar-menu"
           class="hidden-md-and-up"
           slot="activator"
           style="margin-right: 16px;"
-          text 
-          icon>
+          text
+          icon
+        >
           <v-icon>more_horiz</v-icon>
         </v-btn>
         <v-list light>
-          <v-list-tile 
-            v-for="(link, i) in links" 
-            :key="i" 
-            @click="goToSection(link.href, link.duration)">
-            <v-list-tile-title>{{link.text}}</v-list-tile-title>
+          <v-list-tile
+            v-for="(link, i) in links"
+            :key="i"
+            @click="goToSection(link.href, link.duration)"
+          >
+            <v-list-tile-title>{{ link.text }}</v-list-tile-title>
           </v-list-tile>
         </v-list>
       </v-menu>
@@ -45,10 +48,11 @@
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn
           v-for="(link, i) in links"
-          :key="i" 
+          :key="i"
           @click="goToSection(link.href, link.duration)"
-          text>
-          {{link.text}}
+          text
+        >
+          {{ link.text }}
         </v-btn>
       </v-toolbar-items>
     </v-app-bar>
@@ -56,7 +60,7 @@
     <!-- Page Content -->
     <v-content>
       <v-container grid-list-lg>
-        <nuxt/>
+        <nuxt />
       </v-container>
     </v-content>
 
@@ -68,30 +72,30 @@
 </template>
 
 <script>
-  export default {
-    data () {
-      return {
-        links: [
-          {text: 'Skills', href:'#c-skills'},
-          {text: 'Experience', href:'#c-experience'},
-          {text: 'Projects', href:'#c-projects'},
-          {text: 'Contact', href:'#c-contact'}
-        ]
-      }
-    },
+export default {
+  data() {
+    return {
+      links: [
+        { text: "Skills", href: "#c-skills" },
+        { text: "Experience", href: "#c-experience" },
+        { text: "Projects", href: "#c-projects" },
+        { text: "Contact", href: "#c-contact" }
+      ]
+    };
+  },
 
-    methods: {
-      goToSection(selector, duration) {
-        if (duration === undefined) {
-          duration = 700
-        }
-        this.$vuetify.goTo(selector, {
-          duration: duration,
-          easing: 'easeInOutCubic'
-        })
+  methods: {
+    goToSection(selector, duration) {
+      if (duration === undefined) {
+        duration = 700;
       }
+      this.$vuetify.goTo(selector, {
+        duration: duration,
+        easing: "easeInOutCubic"
+      });
     }
   }
+};
 </script>
 
 <style>
@@ -109,4 +113,3 @@
   text-transform: none !important;
 }
 </style>
-
