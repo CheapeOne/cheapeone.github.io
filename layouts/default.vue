@@ -3,11 +3,12 @@
     <!-- Navbar -->
     <v-app-bar
       app
-      flat
-      scroll-off-screen
+      color="secondary"
       dark
       dense
-      color="secondary"
+      fixed
+      flat
+      hide-on-scroll
       id="c-toolbar"
     >
       <img class="logo" src="/super-chris-b.png" alt="" />
@@ -76,10 +77,10 @@ export default {
   data() {
     return {
       links: [
-        { text: "Skills", href: "#c-skills" },
-        { text: "Experience", href: "#c-experience" },
-        { text: "Projects", href: "#c-projects" },
-        { text: "Contact", href: "#c-contact" }
+        { text: 'Skills', href: '#c-skills' },
+        { text: 'Experience', href: '#c-experience' },
+        { text: 'Projects', href: '#c-projects' },
+        { text: 'Contact', href: '#c-contact' }
       ]
     };
   },
@@ -91,7 +92,7 @@ export default {
       }
       this.$vuetify.goTo(selector, {
         duration: duration,
-        easing: "easeInOutCubic"
+        easing: 'easeInOutCubic'
       });
     }
   }
@@ -101,10 +102,10 @@ export default {
 <style>
 .logo {
   width: 30px;
-  margin-left: 16px !important;
+  margin-right: 16px !important;
 }
 
-.application--wrap {
+.v-application--wrap {
   background: #fafafa;
 }
 

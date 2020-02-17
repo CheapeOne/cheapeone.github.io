@@ -10,21 +10,12 @@
 
         <v-container fluid grid-list-lg>
           <v-layout row wrap>
-            <v-chip
+            <icon-chip
               v-for="(language, index) in languages"
               :key="index"
-              outlined
-              label
-              disabled
-              color="secondary"
-            >
-              <img
-                v-if="language.icon"
-                class="c-icon pr-1"
-                :src="language.icon"
-              />
-              {{ language.name }}
-            </v-chip>
+              :text="language.name"
+              :icon="language.icon"
+            />
           </v-layout>
         </v-container>
       </v-card>
@@ -36,17 +27,12 @@
 
         <v-container fluid grid-list-lg>
           <v-layout row wrap>
-            <v-chip
+            <icon-chip
               v-for="(tech, index) in technologies"
               :key="index"
-              outlined
-              label
-              disabled
-              color="secondary"
-            >
-              <img v-if="tech.icon" class="c-icon pr-1" :src="tech.icon" />
-              {{ tech.name }}
-            </v-chip>
+              :text="tech.name"
+              :icon="tech.icon"
+            />
           </v-layout>
         </v-container>
       </v-card>
@@ -55,7 +41,12 @@
 </template>
 
 <script>
+import IconChip from '../IconChip';
+
 export default {
+  components: {
+    IconChip
+  },
   data() {
     return {
       languages: [
@@ -91,7 +82,8 @@ export default {
   height: 20px;
 }
 
-.chip {
+.cc-chip {
+  display: flex;
   border-color: white !important;
 }
 </style>

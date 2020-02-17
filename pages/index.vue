@@ -8,11 +8,11 @@
   </div>
 </template>
 <script>
-import Jumbo from './sections/jumbo';
-import Skills from './sections/skills';
-import Experience from './sections/experience';
-import Projects from './sections/projects';
-import Contact from './sections/contact';
+import Jumbo from '../components/sections/jumbo';
+import Skills from '../components/sections/skills';
+import Experience from '../components/sections/experience';
+import Projects from '../components/sections/projects';
+import Contact from '../components/sections/contact';
 
 export default {
   components: {
