@@ -26,10 +26,6 @@ module.exports = {
     }
   ],
 
-  css: [
-    // '~/assets/style/app.styl'
-  ],
-
   /*
    ** Customize the progress bar color
    */
