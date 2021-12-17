@@ -36,13 +36,13 @@
                 virtual reality, or the next big thing.
               </p>
 
-              <v-btn 
+              <!-- <v-btn 
                 flat
                 color="primary"
                 href="https://drive.google.com/file/d/1yXAxbayw7RR2HKZxglkWj5zotVLeHqxz/view?usp=sharing"
                 target="_blank">
                 Resumé
-              </v-btn>
+              </v-btn> -->
               
             </v-flex>
           </v-layout>

@@ -17,10 +17,6 @@
                 <span>Email:</span>
                 <span style="float: right;">chrischeape@gmail.com</span>
               </div>
-              <div>
-                <span>Phone:</span>
-                <span style="float: right;">706-993-5181</span>
-              </div>
             </v-flex>
 
             <v-flex class="button-box">
